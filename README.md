@@ -1,1 +1,0 @@
-# jinyeob-web-studying
