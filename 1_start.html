@@ -2,47 +2,78 @@
 <html>
 
 <head>
-<title>김진엽의 WEB 수난기</title>
-<meta charset="utf-8">
+  <title>김진엽의 WEB 수난기</title>
+  <meta charset="utf-8">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115763541-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115763541-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-115763541-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<style>
-a{
-  text-decoration: none;
-}
-</style>
+    gtag('config', 'UA-115763541-1');
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #grid ol {
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 35px;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+
+    #article {
+      padding: 35px;
+    }
+  </style>
 
 </head>
 
 <body>
-<a href="https://jinyeob.github.io/jinyeob-webstudying/"><h1><u>한국산업기술대 컴퓨터공학과 15학번 김진엽</u></h1></a>
-<a href="https://www.facebook.com/profile.php?id=100023500039467" target="_blank" title="김진엽 facebook프로필">(Facebook 타임라인)</a>
+  <a href="https://jinyeob.github.io/jinyeob-webstudying/"><h1>한국산업기술대 컴퓨터공학과 <br>15학번 김진엽</h1></a>
 
-<p style="margin-top:45px;">
--------------목차--------------
-</p>
-<ol>
-  <li><a href="1_start.html"
-    style="color:red">시작</a></li>
-  <li><a href="2_HTML.html">HTML</a></li>
-  <li><a href="3_CSS.html">CSS</a></li>
-  <li><a href="4_JavaScript.html">JavaScript</a></li>
-  <li><a href="6.html">댓글</a></li>
-</ol>
---------------------------------
-<ul>
-<li>작성자 김진엽</li>
-</ul>
+  <div id="grid">
+    <ol>
+      <li><a href="1_start.html"
+            style="color:red;">시작</a></li>
+      <li><a href="2_HTML.html">HTML</a></li>
+      <li><a href="3_CSS.html">CSS</a></li>
+      <li><a href="4_JavaScript.html">JavaScript</a></li>
+      <li><a href="6.html">댓글</a></li>
+    </ol>
 
-2018 .03.13 <u>WEB</u> 시작
-<p>아 자료구조 너무 어렵다 아 논리회로 너무 어렵다 아 씨쁠쁠 너무 어렵다<br>
-아 이산수학 너무 어렵다 아 선형대수학 너무 어렵다 아 유닉스 너무 어렵다 (쉬운게 뭐냐) </p>
+    <div id=article>
+      <a href="https://www.facebook.com/profile.php?id=100023500039467" target="_blank" title="김진엽 facebook프로필"><span style="color:blue">(Facebook)</span></a> <br>
+      <p style="margin-top:45px;">
+        2018 .03.13 <u>WEB</u> 시작
+      </p>
+      <p>아 자료구조 너무 어렵다 아 논리회로 너무 어렵다 아 씨쁠쁠 너무 어렵다<br> 아 이산수학 너무 어렵다 아 선형대수학 너무 어렵다 아 유닉스 너무 어렵다 (쉬운게 뭐냐) </p>
+
+    </div>
+  </div>

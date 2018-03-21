@@ -2,55 +2,124 @@
 <html>
 
 <head>
-<title>김진엽의 WEB 수난기</title>
-<meta charset="utf-8">
+  <title>김진엽의 WEB 수난기</title>
+  <meta charset="utf-8">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115763541-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115763541-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-115763541-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<style>
-a{
-  text-decoration: none;
-}
+    gtag('config', 'UA-115763541-1');
+  </script>
 
-h1{
-  text-align: center;
-}
-</style>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #grid ol {
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 35px;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+
+    #article {
+      padding: 35px;
+    }
+
+    #box {
+      /*display:block;*/
+      text-align: center;
+      border: 5px solid red;
+      padding: 20px;
+      margin: 20px;
+      width: 100px;
+    }
+
+    #excercise {
+      border: 5px solid pink;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+
+    }
+  </style>
 
 </head>
 
 <body>
+  <a href="https://jinyeob.github.io/jinyeob-webstudying/"><h1>한국산업기술대 컴퓨터공학과 <br>15학번 김진엽</h1></a>
 
-<a href="https://jinyeob.github.io/jinyeob-webstudying/"><h1><u>한국산업기술대 컴퓨터공학과 15학번 김진엽</u></h1></a>
-<a href="https://www.facebook.com/profile.php?id=100023500039467" target="_blank" title="김진엽 facebook프로필">(Facebook 타임라인)</a>
+  <div id="grid">
+    <ol>
+      <li><a href="1_start.html">시작</a></li>
+      <li><a href="2_HTML.html">HTML</a></li>
+      <li><a href="3_CSS.html"
+            style="color:red;">CSS</a></li>
+      <li><a href="4_JavaScript.html">JavaScript</a></li>
+      <li><a href="6.html">댓글</a></li>
+    </ol>
 
-<p style="margin-top:45px;">
--------------목차--------------
-</p>
-<ol>
-  <li><a href="1_start.html">시작</a></li>
-  <li><a href="2_HTML.html">HTML</a></li>
-  <li><a href="3_CSS.html"
-    style="color:red">CSS</a></li>
-  <li><a href="4_JavaScript.html">JavaScript</a></li>
-  <li><a href="6.html">댓글</a></li>
-</ol>
---------------------------------
+    <div id=article>
+      <a href="https://www.facebook.com/profile.php?id=100023500039467" target="_blank" title="김진엽 facebook프로필"><span style="color:blue">(Facebook)</span></a> <br>
+      <p style="margin-top:45px;"></p>
 
-<ul>
-<li>작성자 김진엽</li>
-</ul>
+        <p>
+          CSS: Cascading Style Sheets <br> 2018-03-20 css 선택자에 대해 배웠다. 태그{css}<br> 태그 선택자
+          < 클래스 선택자 < 아이디 선택자<br>
+            태그 선택자가 훨씬 포괄적이다. 아이디 선택자는 구체적이다.
+        </p>
+        <p>
+          "CSS BOX MODEL"
+          <div id="box">css</div>
 
-<p>
-  CSS: Cascading Style Sheets <br>
-  2018-03-20 css 선택자에 대해 배웠다. 태그{css}<br>
-태그 선택자 < 클래스 선택자 < 아이디 선택자<br>
-태그 선택자가 훨씬 포괄적이다. 아이디 선택자는 구체적이다.
+          <img src="boxmodel.png" width=50%><br>
+          <img src="developertool.PNG" width=50%><br>
+        </p>
+
+        <p>
+          18.03.21 grid에 대해 배우고 있다.<br>
+
+          <div id="excercise">
+            <div>NAVIGATION</div>
+            <div>
+              Navigation is a field of study that focuses on the process of monitoring and controlling the movement of a craft or vehicle from one place to another. The field of navigation includes four general categories: land navigation, marine navigation, aeronautic
+              navigation, and space navigation.
+            </div>
+          </div>
+        </p>
+
+
+
+      </ol>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
